@@ -14,18 +14,22 @@ Incluir <!DOCTYPE html>, etiquetas <html>, <head> (con metadatos y etiqueta <met
 Nutrir la etiqueta <head>con metadatos suficientes, por ejemplo description, author, keywords, etc…
 
 2. **Buenas Prácticas en HTML**
-Semántica:
-Utilizar etiquetas semánticas para estructurar el contenido:
-<header> para la cabecera del sitio.
-<nav> para el menú de navegación.
-<main> para el contenido principal.
-<section> para diferenciar áreas (por ejemplo: "Sobre mí", "Portafolio", "Contacto").
-<article> (opcional) para cada proyecto individual en la sección de portafolio.
-<footer> para la parte inferior con información de copyright y redes sociales.
-Accesibilidad:
-Incluir atributos alt descriptivos en imágenes y utilizar etiquetas semánticas correctas.
-Validación:
-El código HTML debe ser válido (se puede comprobar con el W3C Validator).
+
+**Semántica:**  
+Utilizar etiquetas semánticas para estructurar el contenido:  
+`&lt;header&gt;` para la cabecera del sitio.  
+`&lt;nav&gt;` para el menú de navegación.  
+`&lt;main&gt;` para el contenido principal.  
+`&lt;section&gt;` para diferenciar áreas (por ejemplo: "Sobre mí", "Portafolio", "Contacto").  
+`&lt;article&gt;` (opcional) para cada proyecto individual en la sección de portafolio.  
+`&lt;footer&gt;` para la parte inferior con información de copyright y redes sociales.
+
+**Accesibilidad:**  
+Incluir atributos `alt` descriptivos en imágenes y utilizar etiquetas semánticas correctas.
+
+**Validación:**  
+El código HTML debe ser válido (se puede comprobar con el [W3C Validator](https://validator.w3.org/)).
+
 
 3. **Buenas Prácticas en CSS**
 Reset/Normalize:
