@@ -1,11 +1,28 @@
-/* CSS Reset */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* initial root css */
+:root {
+  --main-color: #003049;
+  --accent-color: #f77f00;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --font-main: 'Helvetica Neue', sans-serif;
+  --max-width: 1200px;
+  --section-padding: 4rem 2rem;
 }
 
+/* initial body css */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  line-height: 1.6;
+}
+main, header, footer {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--section-padding);
+}
 /* Header styling */
 header {
   background-color: #ffffff;
@@ -15,8 +32,17 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  gap: 2rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+nav a:hover {
+    color: var(--accent-color);
 }
 
 /* Products Styling */
@@ -36,9 +62,14 @@ nav {
   border-radius: 8px;
 }
 
+.product:hover {
+  transform: translateY(-5px);
+}
+
 .product img {
   width: 100%;
   max-width: 150px;
   height: auto;
   margin-bottom: 1rem;
 }
+
