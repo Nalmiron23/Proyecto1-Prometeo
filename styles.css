@@ -86,3 +86,39 @@ section {
 border-radius: 6px;
 }
 
+/* Initial Media stylings */
+@media (max-width: 768px) {
+    .product-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .product {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Adjusting nav, too wide on mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    nav a {
+        padding: 0.5rem 0;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    main, header, footer {
+        padding: 2rem 1rem;
+    }
+}
