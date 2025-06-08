@@ -45,21 +45,33 @@ nav a:hover {
     color: var(--accent-color);
 }
 
+/* Initial styling for Headings and Sections */
+h1, h2, h3 {
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+section {
+    margin-bottom: 3rem;
+}
+
 /* Products Styling */
 .product-flex {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .product {
   flex: 1;
+  min-width: 250px;
   background-color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid #ddd;
   text-align: center;
   border-radius: 8px;
+  transition: transform 0.3s ease;
 }
 
 .product:hover {
@@ -68,8 +80,9 @@ nav a:hover {
 
 .product img {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
   margin-bottom: 1rem;
+border-radius: 6px;
 }
 
