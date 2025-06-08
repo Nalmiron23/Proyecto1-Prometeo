@@ -113,6 +113,21 @@ button:hover {
     background-color: #e06900;
 }
 
+footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 0,5rem;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Initial Media stylings */
 @media (max-width: 768px) {
     .product-flex {
