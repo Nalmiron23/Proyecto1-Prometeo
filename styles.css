@@ -18,9 +18,7 @@ body {
   margin: 0;
   line-height: 1.6;
 }
-main, header, footer {
-    max-width: var(--max-width);
-    margin: auto;
+main {
     padding: var(--section-padding);
 }
 /* Header styling */
@@ -30,6 +28,13 @@ header {
   border-bottom: 1px solid #eee;
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: auto;
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -43,6 +48,42 @@ nav a {
 }
 nav a:hover {
     color: var(--accent-color);
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+#hero {
+    position:relative;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.hero-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+#tagline {
+  background-color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+#tagline h1 {
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 900px;
+  color: var(--main-color);
+  font-weight: 600;
+  margin: auto;
 }
 
 /* Initial styling for Headings and Sections */
